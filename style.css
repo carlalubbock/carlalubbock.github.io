@@ -1,0 +1,204 @@
+
+/* This is a CSS comment.
+Always comment your work to explain what you're doing */
+body {
+	margin: 0;
+  background-color: darkslategrey;
+	background-image: url("pics/bg swirls2.png");
+  background-repeat:repeat;
+  background-size: cover;
+
+	
+	/*for the general page background, can change colour, and make it an image*/
+}
+
+
+h1 {
+	font-size: 50px;
+	text-transform: uppercase;
+	font-family: "Aladin", system-ui;
+	color:darkcyan;
+	min-height: 45px;
+	padding-right: 10px;
+}
+
+h2{
+	  font-family: "Aladin", system-ui;
+	font-size: 30px;
+    color:darkcyan;
+}
+
+h3{
+	font-family: "Aubrey", system-ui;
+	font-size: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+p,li,a {
+	font-family: "Aubrey", system-ui;
+	font-size: 17px;
+}
+
+#header {
+	color:darkcyan;
+	text-align: center;
+	background-image-align: center;
+	background-size:cover;
+	background-color:oldlace;
+	width: 100%; 
+	padding-top: 1px;
+}
+
+#header h1 {
+	height: 45px;
+}
+
+#footer {
+	color:oldlace;
+	text-align: center;
+}
+
+#main {
+	color: darkslategrey;
+	
+}
+.item-section {
+	background-color:oldlace;
+	  /* ^ this creates the rounded boxes that separate the different sections */
+	border-radius: 10px;
+	  /* ^ this creates the rounded corners of the boxes */
+	padding-top: 1px;
+	padding-bottom:1px;
+	padding-left: 17px;
+	padding-right: 5px;
+
+	margin-right: 5.5%;
+		margin-left:5.5%;
+	margin-top: 15px;
+
+
+}
+
+
+
+video {
+	display: inline;
+}
+
+img {
+	display:block;
+	align-content: center;
+	margin: auto;
+	max-height: 225px;
+	min-height: 150px;
+	padding-right: 3%;
+}
+/* not using header list for menu anymore, but still keeping it just in case*/
+#header ul {
+	display: flex;
+	/*allows the heading list to go in a row*/
+	justify-content: space-between;
+	/*makes the elements not all squish together*/
+	padding: 3%;
+}
+
+#header li {
+	font-size:22px;
+	list-style-type: none;
+	/*gets rid of dot points*/
+	width: 40%;
+	background-color:darkseagreen;
+	border: 5px solid darkslategray;
+	border-radius: 5px;
+	text-decoration: none;
+	margin: 20px;
+	color: darkslategray;
+	padding: 5px;
+	text-align: center;
+	
+}
+
+#header li:hover {
+	/*what happens when cursor hovers over element*/
+	width: 40%;
+	background-color:aquamarine;
+	text-align: center;
+	color: darkslategray;
+}
+
+form {
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+input{
+	margin: 2px;
+}
+
+.side-bar {
+	display: flex;
+	align-content: center;
+}
+
+
+
+
+.navbar {
+  overflow: hidden;
+  background-color: darkcyan;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: oldlace;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: oldlace;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: "Aubrey", system-ui;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: darkslategray;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: darkcyan;
+  min-width: 160px;
+  box-shadow: 1px 2px 10px 0px black ;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: inline-flex;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: darkslategray;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
